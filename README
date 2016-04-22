@@ -33,9 +33,12 @@ sudo2svg should work with any one-line puzzle source.
     render.sudoku
 ----------------------
 
-Also included here is my Inkscape extenstion script in Python.
+Also included here is my Inkscape extension script in Python.
 
-To install in Inkscape extract the 2 render.sudoku files along with the svg-tempates into your /usr/share/inkscape/extensions directory.
+To install in Inkscape extract the 2 render_sudoku files and qqwing.exe into your /usr/share/inkscape/extensions directory.
+For windows use: %appdata%/inkscape/extensions/
+In all cases copy the individual files and folders into the directory indicated in:
+ - Edit -> Preferences -> System: User extensions 
 
 Start Inkscape and you will see a new render extension called Sudoku.
 
