@@ -87,7 +87,7 @@ class SVGSudoku (inkex.Effect):
             #inkex.utils.debug("data["+str(n)+"]="+str(data[n]))
             if str(data[n]) in "123456789":
                 attribs = {'style': str(inkex.Style(text_style)), 
-                    'x': str(self.left + x + n%9 * cellsize + cellsize/2  ), 'y': str(self.top + y + n/9 * cellsize + offset ) }
+                    'x': str(self.left + x + n%9 * cellsize + cellsize/2  ), 'y': str(self.top + y + n//9 * cellsize + offset ) }
                 etree.SubElement(g, 'text', attribs).text = str(data[n])
 
 
