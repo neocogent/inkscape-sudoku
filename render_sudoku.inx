@@ -43,11 +43,9 @@
    </param>
    <effect>
       <object-type>all</object-type>
-      <effects-menu>
-         <submenu _name="FabLab Chemnitz">
-            <submenu _name="Shape/Pattern from Generator" />
-         </submenu>
-      </effects-menu>
+         <effects-menu>
+           <submenu _name="Render"/>
+         </effects-menu>
    </effect>
    <script>
       <command reldir="extensions" interpreter="python">render_sudoku.py</command>
