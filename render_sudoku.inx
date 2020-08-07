@@ -3,8 +3,8 @@
   <_name>Sudoku</_name>
   <id>org.inkscape.render.sudoku</id>
    <param name="tab" type="notebook">
-      <page name="tab_puzzle" _gui-text="Puzzle">
-         <param name="difficulty" type="enum" _gui-text="Difficulty">
+      <page name="tab_puzzle" gui-text="Puzzle">
+         <param name="difficulty" type="optiongroup" appearance="combo" gui-text="Difficulty">
             <_item value="mixed">Mixed</_item>
             <_item value="simple">Simple</_item>
             <_item value="easy">Easy</_item>
@@ -12,33 +12,25 @@
             <_item value="expert">Expert</_item>
          </param>
          <param name="desc_unit" type="description">Layout parameters:</param>
-         <param name="rows" type="int" min="1" max="6" _gui-text="Rows">1</param>
-         <param name="cols" type="int" min="1" max="6" _gui-text="Cols">1</param>
+         <param name="rows" type="int" min="1" max="6" gui-text="Rows">1</param>
+         <param name="cols" type="int" min="1" max="6" gui-text="Cols">1</param>
          <param name="desc_unit" type="description">Puzzle Dimensions:</param>
-         <param name="units" _gui-text="Units" type="optiongroup" appearance="minimal">
+         <param name="units" gui-text="Units" type="optiongroup" appearance="combo">
             <option value="px">px</option>
             <option value="pt">pt</option>
             <option value="in">in</option>
             <option value="cm">cm</option>
             <option value="mm">mm</option>
          </param>
-         <param name="puzzle_size" type="int" min="1" max="1000" _gui-text="Puzzle Width(Height)">6</param>
-         <param name="puzzle_gap" type="int" min="1" max="100" _gui-text="Puzzle Gap">1</param>
+         <param name="puzzle_size" type="int" min="1" max="1000" gui-text="Puzzle Width(Height)">6</param>
+         <param name="puzzle_gap" type="int" min="1" max="100" gui-text="Puzzle Gap">1</param>
       </page>
-      <page name="tab_textcolor" _gui-text="Text Color">
-         <param name="color_text" type="color" _gui-text="Text color ">0</param>
-      </page>
-      <page name="tab_background" _gui-text="Background">
-         <param name="color_bkgnd" type="color" _gui-text="Background color">-1</param>
-      </page>
-      <page name="tab_border" _gui-text="Border">
-         <param name="color_puzzle" type="color" _gui-text="Puzzle Border color">0</param>
-      </page>
-      <page name="tab_boxcolor" _gui-text="Box Color">
-         <param name="color_boxes" type="color" _gui-text="Box Border color ">0</param>
-      </page>
-      <page name="tab_celllines" _gui-text="Cell Lines">
-         <param name="color_cells" type="color" _gui-text="Cell Border color">-791621617</param>
+      <page name="colors" gui-text="Colors">
+         <param name="color_text" type="color" appearance="colorbutton" gui-text="Text color ">0</param>
+         <param name="color_bkgnd" type="color" appearance="colorbutton" gui-text="Background color">-1</param>
+         <param name="color_puzzle" type="color" appearance="colorbutton" gui-text="Puzzle Border color">0</param>
+         <param name="color_boxes" type="color" appearance="colorbutton" gui-text="Box Border color ">0</param>
+         <param name="color_cells" type="color" appearance="colorbutton" gui-text="Cell Border color">-791621617</param>
       </page>
    </param>
    <effect>
